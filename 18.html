@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <script>
-    function hiThere(){
-        alert('Hi There!');
-    }
-    var a=0;
-    var b=0;
-    var c=0;
-    function ChangeBackground(){
-        var x=document.getElementById('bg');
-        bg.style.backgroundColor='rgb('+a+','+b+','+c+')';
-        a+=1;
-        b+=a+1;
-        c+=b+1;
-        if(a>255)a=a-b;
-        if(b>255)b=a;
-        if(c>255)c=b;
-    }
-    function hov(){
-        var e=document.getElementById('hover');
-        e.style.display='none';
-    }
-    function focused(){
-        var e=document.getElementById('imp');
-        if(confirm('Got it?')){
-            e.blur();
+    <title>Grid Parition</title>
+    <style>
+        .item1 {
+            grid-area: header;
         }
-    }
-    </script>
-    
+        
+        .item2 {
+            grid-area: menu;
+        }
+        
+        .item3 {
+            grid-area: main;
+        }
+        
+        .item4 {
+            grid-area: right;
+        }
+        
+        .item5 {
+            grid-area: footer;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header header header header header header' 'menu main main main right right' 'menu footer footer footer footer footer';
+            grid-gap: 10px;
+            background-color: Lightgreen;
+            padding: 10px;
+        }
+        
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
 </head>
+
 <body>
-   <button type="button" onclick="hiThere()">Click me event</button> 
-   <input  id="bg"onekeyup="ChangeBackground()"placeholder="Write something"style="color:#fff">
-   <div id="hover"onmouseover="hov()"style="background-color:green;height:200px;width:200px;"></div>
-   <div id="hover"onmouseout="out()"style="background-color:green;height:200px;width:200px;"></div>
-   <input onchange="alert(this.value)"type="number">
-   <img onload="alert('Image completely loaded')">
-   <p>Take the focus into the input box below:</p>
-   <input id="inp"onfocus="focused()">
-   <p>Write something in the input box below and then click elsewhere in the document body.</p>
-   <input onblur="alert(this.value)">
+    <h1>Grid Layout</h1>
+    <p>This grid layout contains six columns and three rows:</p>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+    </div>
 
 </body>
+
 </html>
