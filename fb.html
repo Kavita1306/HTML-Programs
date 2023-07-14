@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three Column Layout Page</title>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+nav{
+  padding:0px;
+  background-color: #1877F2;
+  color: white;
+}
+h2{
+font-size: 30;
+font-family:kalvika;
+}
+/* Create three equal columns that floats next to each other */
+.column-1 {
+  float: left;
+  width: 15%;
+  padding: 10px;
+  height: 800px; /* Should be removed. Only for demonstration */
+}
+.column {
+  float: left;
+  width: 35%;
+  padding: 10px;
+  height: 800px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+<nav>facebook</nav>
+
+
+<div class="row">
+  <div class="column-1" style="background-color:#aaa;">
+    <h2>Social Pro Daily</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+</body>
+</html>

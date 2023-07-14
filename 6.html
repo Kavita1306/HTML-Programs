@@ -1,18 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inline Css</title>
+    <title>Conditional Operators</title>
 </head>
 <body>
-    <h1>
-    <span style="color:orange;">Positivity</span>
-    <span style="color:green;">In</span>
-    <span style="color:blue;">Negativity</span>
-    <span style="color:Red">Out!!</span>
-
-    </h1>
+    <p>Conditional Operators Demostration</p>
+    <p>Condition:=</p>
+    <p id="demo"></p>
+    <p>Condition:==</p>
+    <p id="demo1"></p>
+    <p>Condition:<=</p>
+    <p id="demo2"></p>
+    <p>Condition:!=</p>
+    <p id="demo3"></p>
+    <p>Condition:<</p>
+    <p id="demo4"></p>
+    <p>Condition:></p>
+    <p id="demo5"></p>
+    <p>Condition:===</p>
+    <p id="demo6"></p>
+    <p>Condition:!== </p>
+    <p id="demo7"></p>
+    <script>
+        var a=50;
+        var b=25;
+        var status1=(marks>=15)?"Pass":"Fail";
+        var x=(marks==15)?"True":"False";
+        var x1=(marks<=15)?"True":"False";
+        var x2=(marks!=15)?"True":"False";
+        var x3=(marks<15)?"True":"False";
+        var x4=(marks>15)?"True":"False";
+        var x5=(marks===15)?"True":"False";
+        var x6=(marks!==15)?"True":"False";
+        document.getElementById("demo").innerHTML=status1;
+        document.getElementById("demo1").innerHTML=x;
+        document.getElementById("demo2").innerHTML=x1;
+        document.getElementById("demo3").innerHTML=x2;
+        document.getElementById("demo4").innerHTML=x3;
+        document.getElementById("demo5").innerHTML=x4;
+        document.getElementById("demo6").innerHTML=x5;
+        document.getElementById("demo7").innerHTML=x6;
+    </script>
 </body>
 </html>

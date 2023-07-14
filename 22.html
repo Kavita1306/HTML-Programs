@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text"id="uin"value="Enter an Integer">
+    </form>
+    <script>
+        function game(){
+            var a=document.getElementById("uin").value;
+            var b=parseInt(a);
+            var c=Math.floor(Math.random()*10)+1;
+            if(b==c)
+            {document.getElementById('demo').innerHTML="Congrats!!! You Win";
+        }
+        else{
+            document.getElementById('demo').innerHTML="Sorry!!! You Lose"; 
+        }
+        }
+    </script>
+    <button onclick="game()">Result</button>
+    <p id="demo"></p>
+ 
+</body>
+</html>

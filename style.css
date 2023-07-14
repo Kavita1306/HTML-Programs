@@ -1,162 +1,113 @@
-*{
-	margin: 0;
-	padding: 0;
-	font-family: 'Roboto Condensed', sans-serif;
+/* CSS for Breaking News website */
+
+/* Global styles */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
 }
 
-/* navbar */
-
-.navbar-nav{
-	margin-right: 0 !important;
-	padding-right: 100px;
+a {
+    color: #333;
+    text-decoration: none;
 }
 
-.navbar{
-	background-color: #0a193d;
-	color: white !important;
+a:hover {
+    text-decoration: underline;
 }
 
-.nav-item a{
-	color: white !important;
+header {
+    background-color: #333;
+    color:orange;
+    padding: 20px;
 }
 
-.nav-item{
-	padding-left: 2px;
+h1 {
+    margin: 0;
+    font-size: 36px;
 }
 
-.navbar-brand{
-	color: white !important;
-	padding-left: 100px;
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-#navbar button{
-	color: white !important;
+nav li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-/* banner */
-
-#banner-container{
-	background-color: #0a193d;
-	color: white !important;
-	padding-top: 80px;
-	padding-bottom: 80px;
-	
+nav a {
+    color:orange;
 }
 
-#banner-row img{
-	max-width: 70%;
-	height: auto;
-	display: block;
-	padding-left: 30px;
+nav a:hover {
+    color: #ccc;
 }
 
-#banner-row h3, p{
-	padding-left: 20px;
-	padding-top: 20px;
-	text-align: center;
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-#banner-row a{
-	background-color: white !important;
-	color: black !important;
-	border: none;
-	margin-left: 20px;
-	margin-top: 20px;
-	
-}
-#banner-col{
-	padding-left: 20px;
-}
-/* service */
-#service{
-	padding-top: 80px;
-	padding-bottom: 80px;
+.featured {
+    margin-bottom: 40px;
 }
 
-#service h1{
-	padding-bottom: 70px;
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-/* about */
-
-#about{
-	padding-top: 80px;
-	padding-bottom: 80px;
+article {
+    border: 1px solid black;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-#about h1{
-	padding-bottom: 70px;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
 }
 
-#about-col ul{
-	padding-top: 50px;
-	padding-left: 50px;
+h2 {
+    margin-top: 0;
+    font-size: 24px;
 }
 
-#about-col ul li{
-	padding-top: 15px;
-	
+h3 {
+    margin-top: 0;
+    font-size: 20px;
 }
 
-/* product */
-
-#product{
-	padding-top: 80px;
-	padding-bottom: 80px;
+p {
+    margin-bottom: 20px;
 }
 
-#product h1{
-	padding-bottom: 70px;
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-#product-col2 ul{
-	padding-top: 90px;
-}
+/* Media queries */
 
-#product-col2 ul li{
-	padding-top: 15px;
-}
+@media screen and (max-width: 767px) {
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
 
-/* social */
-
-#social{
-	padding-top: 80px;
-	padding-bottom: 80px;
-}
-
-#social h1{
-	padding-bottom: 70px;
-}
-
-.social-col a:hover img{
-transform: translateY(-10px);
-}
-
-#social-row{
-	flex-direction: row;
-}
-
-/* footer */
-
-.mb-3{
-padding-top: 10px;
-}
-
-
-/* media */
-@media only screen and (max-width: 987px){
-	.navbar-brand{
-		padding-left: 0px;
-	}
-}
-
-@media only screen and (max-width: 768px){
-	#banner-row img{
-		padding-top: 20px;
-	}
-
-.social-col{
-	width: 33%;
-}
-
+    header {
+        text-align: center;
+    }
 }

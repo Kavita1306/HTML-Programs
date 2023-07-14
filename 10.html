@@ -1,42 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Css Properties</title>
-    <style>
-        p{
-            color:blue;
-        }
-        p1{
-            text-align: center;
-        }
-        p2{
-            text-align: left;
-        }
-        p3{text-align: right;
-        }
-        #a{
-            text-decoration: overline;
-        }
-        #b{
-            text-decoration: line-through;
-        }
-        #c{
-            text-decoration: underline;
-        }
-    </style>
+    <title>Looping concept</title>
 </head>
 <body>
-    <h1>1.Text Color</h1>
-    <p>This text color is Blue.</p>
-    <h1>2.Text Align</h1>
-    <p1>Paragraph1(center)</p1><br>
-    <p2>Paragraph2(left)</p2><br>
-    <p3>Paragraph3(right)</p3><br>
-    <h1>3.Text Decoration</h1><br>
-    <h3 id="a">This is heading 1.</h3><br>
-    <h3 id="b">This is heading 2.</h3><br>
-    <h3 id="c">This is heading 3.</h3><br>
-    
-
+   <h2>Table of 12 by for loop</h2> 
+   <script type="text/javascript">
+       var table=12;
+       for(var i=1;i<=10;i++)
+       {
+           document.write('<br>'+table*i);
+       }
+       document.write('<br>'+"<h2>Table of 15 by while loop</h2>");
+       var j=1;
+       var table1=15;
+       while(j<=10)
+       {
+           document.write('<br>'+table1*j);
+           j++;
+       }
+       document.write('<br>'+"<h2>Table of 17 by do-while loop</h2>");
+       var k=1;
+       var table3=17;
+       do{
+           document.write('<br>'+table3*k);
+       }while(k<=10);
+       document.write("<br>");
+       document.write('<br'+"<h2>Print Star patter by Nested For Loop</h2>");
+       for(var i=1;i<=5;i++)
+       {
+           for(var j=1;j<=i;j++)
+           {
+               document.write("*");
+           }
+           document.write("<br>");
+       }
+   </script>
 </body>
 </html>

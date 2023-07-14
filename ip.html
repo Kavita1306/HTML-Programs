@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Getting IP Address</title>
+    <style>
+    p, h1 {
+        color: green;
+    }
+    </style>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+      <script>          
+    $.getJSON("https://api.ipify.org?format=json", function(data) {
+        $("#JS").html(data.ip);
+    })
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Javascript Program</h1>
+        <h3>IP Address of user is:</h3>
+        <p id="JS"></p>
+    </center>
+</body>
+</html>

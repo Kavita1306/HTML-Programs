@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="lightblue">
+    <script type="text/javascript">
+    function func()
+    {
+        document.getElementById("print").innerhtml="Screen Width:"+Screen.width;
+        document.getElementById("print1").innerhtml="Screen Height:"+Screen.height;
+        document.getElementById("print2").innerhtml="Page Location is:"+window.location.href;;
+        document.getElementById("print3").innerhtml="Name is:"+navigator.appName+".Code name is"+navigator.appCodeName;
+        document.getElementById("print4").innerhtml="Screen Color Depth:"+ screen.color.Depth;
+        
+    }
+    </script>
+    <h1>
+<button onclick="func()">Try it</button>
+<p id="print"></p>
+<p id="print1"></p>
+<p id="print2"></p>
+<p id="print3"></p>
+<p id="print4"></p>
+
+<body>
+    
+</body>
+</html>

@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Document level Css</title>
+    <title>Logical Operators Demostration</title>
 </head>
 <body>
-    <style>
-        h1{
-            color:white;
-            text-align: corner;
-        }
-    </style>
+    <p>Logical Operator:&&</p>
+    <p id="demo1"></p>
+    <p>Logical Operator:||</p>
+    <p id="demo2"></p>
+    <p>Logical Operator:!</p>
+    <p id="demo3"></p>
+    <script>
+        var x=70;
+        var y=90;
+        document.getElementById("demo1").innerHTML=(x<10&&y>10);
+        document.getElementById("demo2").innerHTML=(x<10||y>20);
+        document.getElementById("demo3").innerHTML=!(y>80);     
+    </script>
 </body>
-<h1><mark>Don't Wait Just Initiate!!</mark></h1>
 </html>

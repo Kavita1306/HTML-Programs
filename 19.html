@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cookies</title>
+    <script type="text/javascript">
+        function createCookie(cookieName,cookieValue,daysToExpire)
+        {
+            var date=new Date();
+            date.setTime(date.getTime()+(daysToExpire*24*60*60*1000));
+            document.cookie="cookieName=;expires=mon,15 November 2021 00:00:00 GMT";
+        }
+        function accessCookie(cookieName)
+        {
+            var name=cookieNAme+"=";
+            var c_Array=document.cookie.split(";");
+            for(var i=0;i<c_Array.length;i++)
+            {
+                var temp=c_Array[i].trim();
+                if(temp.indexOf(name)==0)
+                return temp.substring(name.length,temp.length);
+
+            }
+            return"";
+        }
+        function checkCookie()
+        {
+            var user=accessCookie("testCookie");
+            if(user!="")
+            alert("Welcome In Cookie World!"+"!!!");
+            else{
+                user=prompt("Please enter your name");
+                n=prompt("How many days you want to take this cookie oon your computer!");
+                if(user!="&&user!=null")
+                {
+                    createCookie("testCookie",user,n);
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="checkCookie()"></body>
+</html>

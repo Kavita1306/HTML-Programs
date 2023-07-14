@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 40%;
-  height: 600px;
-  padding :5px;
-   /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-  
-}
-</style>
+	<title>News Webpage</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<header>
+		<h1><center>Daily Breaking News</h1></center>
+		<nav>
+			<ul>
+				<li><a href="#">Politics</a></li>
+				<li><a href="#">Business</a></li>
+				<li><a href="#">Technology</a></li>
+				<li><a href="#">Entertainment</a></li>
+			</ul>
+		</nav>
+	</header>
 
-<h2 style="color:brown">News Portal</h2>
+	<main>
+		<section class="featured">
+			<h2>Headline News</h2>
+			<p>Delhi excise case: AAP fears for Manish Sisodia’s safety inside Tihar jail.Aam Aadmi Party (AAP) leaders on Wednesday expressed fear over the safety of former deputy chief minister Manish Sisodia who is inside the Tihar prison complex in an alleged excise case.</p>
+		</section>
+		
+		<section class="news-grid">
+			<article>
+				<img src="https://images.news18.com/ibnlive/uploads/2023/03/womens-day-2023-purple-colour-history.jpg?im=FitAndFill,width=1200,height=900" alt="News Image">
+				<h3>Women's Day</h3>
+				<p>Happy International Women’s Day 2023: Wishes Images, Whatsapp Messages, Status, Quotes and Photos</p>
+			</article>
+			<article>
+				<img src="https://images.news18.com/ibnlive/uploads/2023/03/tripura-cm-manik-saha-oath-taking-election-news-live-tipra-motha.jpg?impolicy=website&width=510&height=340" alt="News Image">
+				<h3>Tripura Oath Taking LIVE</h3>
+				<p>Tripura LIVE: Manik Saha Sworn-in as CM for 2nd Term; Tipra Motha Chief Meets Shah Amid Buzz Over Possible Alliance</p>
+			</article>
+			<article>
+				<img src="https://www.hindustantimes.com/ht-img/img/2023/03/08/550x309/google_1674128497482_1678263802512_1678263802512.jpg" alt="News Image">
+				<h3>This year, Google to see fewer promotions to senior roles than in past: Report</h3>
+				<p>An email from the company informed the staff this was being done to ensure that the rise in number of ‘Googlers’ in leadership roles is proportional to the organisation's growth.</p>
+			</article>
+			<article>
+				<img src="https://www.hindustantimes.com/ht-img/img/2023/03/08/550x309/aff77f1c-1d92-11ed-bbe8-9cf972e52f11_1660675282637_1678266881863_1678266881863.jpg" alt="News Image">
+				<h3>On Women's Day, Air India says 15% of its total 1,825 pilots are female</h3>
+				<p>Air India on Wednesday said 15 per cent of its 1,825 pilots are women pilots, making it an airline with the largest number of female pilots.</p>
+			</article>
+			<article>
+				<img src="https://www.hindustantimes.com/ht-img/img/2023/03/08/550x309/putin_secret_palace_1677727000807_1678266524046_1678266524046.jpg" alt="News Image">
+				<h3>ladimir Putin's ‘assets managed by persons close to him’, including this friend</h3>
+				<p>Vladimir Putin: Sergey Roldugin also appears on the Swiss list of sanctioned Russians. He is also among the many members of Vladimir Putin's inner circle sanctioned by the West.</p>
+			</article>
+			<article>
+				<img src="https://www.hindustantimes.com/ht-img/img/2023/03/08/550x309/SRILANKA-IMF-0_1678265407314_1678265407314_1678265434102_1678265434102.JPG" alt="News Image">
+				<h3>Will China help bankrupt Sri Lanka? Beijing says why not</h3>
+				<p>China On Sri Lanka Economic Crisis: China "supports relevant financial institutions in actively discussing debt disposal plans with the Sri Lankan side", Mao Ning asserted.</p>
+			</article>
+		</section>
+	</main>
 
-<div class="row">
-  <div class="column" style="background-color:rgb(29, 138, 37);">
-<img src="C:\Users\ACER\Downloads\img1.jpg">
-    <h2>India among countries with most Android malware, ‘GB WhatsApp’ among responsible apps: ESET report</h2>
-    <p>As cybersecurity threats around the world decrease post COVID, a new ESET report suggests the situation is still not very good in India, which happens to be one of the largest playgrounds for Android malware. </p>
-  </div>
-  <div class="column" style="background-color:rgb(172, 112, 161);">
-    <img src="C:\Users\ACER\Downloads\img2.jpg"width="100%">
-    <h2>Apple’s record Euro 1.1 billion French antitrust fine slashed by 66 per cent</h2>
-    <p>Apple won a €728 million-euro ($715 million) reduction to the record €1.1 billion penalty it was hit with in 2020 for anti-competitive agreements with two favored distributors.<br>The Paris court of appeals reduced Apple’s total fine on Thursday to about €371.6 million after judges decided to trim the duration of one of the infringements and lower the increases applied to the penalty that took into account the firm’s economic power.</p>
-  </div>
-</div>
+	<footer>
+		<p>&copy; 2023 Breaking News. All rights reserved.</p>
+	</footer>
 
 </body>
 </html>

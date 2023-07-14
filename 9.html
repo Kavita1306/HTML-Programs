@@ -1,50 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Font Properties</title>
-    <style type="text/css">
-        p1{
-            font-family:callibri;
-        }
-        p2{
-            font-style:oblique;
-        }
-        p3{
-            font-style:normal;
-        }
-        p4{
-            font-style:italic;
-        }
-        p5{
-            font-size:50px;
-        }
-        p6{
-            font-weight: bold;
-        }
-        p7{
-            font-variant: small-caps;
-        }
-        p8{
-            font-variant: normal;
-        }
-    </style>
+    <title>Conditional Structure</title>
 </head>
 <body>
-    <h3>1.Font-Family</h3><br>
-    <p1>This is Callibri font family.</p1><br>
-    <h3>2.Font Style</h3><br>
-    <p2>This is oblique font style.</p2><br>
-    <p3>This is normal font style.</p3><br>
-    <p4>This is italic font style.</p4><br>
-    <h3>3.Font Size</h3><br>
-    <p5>This line hae 50 pixel font-size.</p5><br>
-    <h3>4.Font Weight</h3><br>
-    <p6>This is bold font-weight.</p6><br>
-    <h3>5.Font Variant</h3><br>
-    <p7>This is small caps font-variant.</p7><br>
-    <p8>This is normal font-variant.</p8>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <button onclick="myFunction()">if-else</button><br>
+    <button onclick="myfun()">Nested if-else</button>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        var a=10;
+        var b=20;
+        if(a<15){
+            document.getElementById('demo').innerHTML="This is Simple if condition";
+        }
+        function myFunction(){
+            var hour=new Date.getHours();
+            var greeting;
+            if(hour<14){
+                greeting="Good Day!!";
+            }
+            else{
+                greeting="Good Evening!!";
+            }
+            document.getElementById("demo1").innerHTML=greeting;
+        }
+        function myfun(){
+            var greeting;
+            var time=new Date.getHours();
+            if(time<15){
+                greeting="Good Morning!!";
+            }else if(time<10){
+                greeting="Good Day"
+            }else{
+                greeting="Good Evening";
+            }
+            document.getElementById("demo2").innerHTML=greeting;
+        }
+        var day;
+        switch(new Date().getDay()){
+            case 0:
+                day="Sunday";
+                break;
+                case 1:
+                day="Monday";
+                break;
+                case 2:
+                day="Tuesday";
+                break;
+                case 3:
+                day="Wednesday";
+                break;
+                case 4:
+                day="Thursday";
+                break;
+                case 5:
+                day="Friday";
+                break;
+                case 6:
+                day="Saturday";
+                break;
+        }
+        document.getElementById("demo3").innerHTML="Today is " +  day;
+    </script>
+    
 </body>
 </html>

@@ -1,23 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video in HTML page</title>
-</head>
-
+<html>
 <body>
-    <h1> Introduction of Javascript</h1>
-    <video width="400" controls>
-        <source src="javascript.mp4"type="video/mp4">
-    </video>
-    <br>
-    <br>
-    <button style="background-color: black;font-size:20px;">
-    <a href="https://youtu.be/W6NZfCO5SIk"target="_blank"> Subscribe now</a>
-</button>
-</body>
+    <h2>Javascript Arithmetic Operators</h2>
+    <p>A  typical arithmetic operation takes two numbers (or variables) and produces a new number.</p>
+    <p>Addition</p>
+    <p id="demo"></p>
+    <p>Subtraction</p>
+    <p id ="demo1"></p>
+    <p>Multiply</p>
+    <p id="demo2"></p>
+    <p>Division</p>
+    <p id="demo3"></p>
+    <p>Modulus</p>
+    <p id="demo4"></p>
+    <p>Increment</p>
+    <p id="demo5"></p>
+    <p>Decrement</p>
+    <p id="demo6"></p>
+    <p>Exponential</p>
+    <p id="demo7"></p>
+    <p>Pow Method</p>
+    <p id="demo8"></p>
+    <script>
+        var a=50;
+        var b=25;
+        var x=a+b;
+        var y=a-b;
+        var z=a*b;
+        var div=a/b;
+        var mod=a%b;
+        var inc=a++;
+        var dec=b--;
+        var exp=3**6;
+        var pw=Math.pow(6,5);
+        document.getElementById("demo").innerHTML=x;
+        document.getElementById("demo1").innerHTML=y;
+        document.getElementById("demo2").innerHTML=z;
+        document.getElementById("demo3").innerHTML=div;
+        document.getElementById("demo4").innerHTML=mod;
+        document.getElementById("demo5").innerHTML=inc;
+        document.getElementById("demo6").innerHTML=dec;
+        document.getElementById("demo7").innerHTML=exp;
+        document.getElementById("demo8").innerHTML=pw;
 
+    </script>
+
+</body>
 </html>
