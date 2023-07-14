@@ -1,0 +1,37 @@
+.container {
+    padding-top: 50px;
+    }
+    
+    .navbar {
+    background-color: #f8f9fa;
+    }
+    
+    .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #212529;
+    }
+    
+    .navbar-nav .nav-item .nav-link {
+    color: #212529;
+    font-size: 18px;
+    font-weight: bold;
+    }
+    
+    h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #212529;
+    }
+    
+    p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #6c757d;
+    }
+    
+    footer {
+    padding: 20px;
+    color: #6c757d;
+    font-size: 16px;
+    }

@@ -1,0 +1,188 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+  }
+  
+  /* Header styles */
+  .section-header {
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 15px 0;
+  }
+  
+  .header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .header-main .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-main .search .input-group-append .btn-primary {
+    background-color: #e7ab3c;
+    border-color: #e7ab3c;
+  }
+  
+  .header-main .widgets-wrap .widget-header {
+    display: inline-block;
+  }
+  
+  .header-main .widgets-wrap .widget-header .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7ab3c;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .header-main .widgets-wrap .widget-header .notify {
+    background-color: #e7ab3c;
+    font-size: 12px;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+  }
+  
+  .header-main .widgets-wrap .widget-header.icontext .text {
+    margin-left: 10px;
+  }
+  
+  .header-main .widgets-wrap .widget-header.icontext .text .text-muted {
+    display: block;
+    font-size: 12px;
+  }
+  
+  .header-main .widgets-wrap .widget-header.icontext .text div {
+    margin-top: 3px;
+  }
+  
+  /* Navigation styles */
+  .navbar-main {
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .navbar-main .navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .navbar-main .navbar-nav .nav-item .nav-link:hover,
+  .navbar-main .navbar-nav .nav-item .nav-link:focus {
+    color: #e7ab3c;
+  }
+  
+  .navbar-main .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle {
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .navbar-main .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle:hover,
+  .navbar-main .navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle:focus {
+    color: #e7ab3c;
+  }
+  
+  .navbar-main .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+    color: #333;
+    font-weight: 400;
+  }
+  
+  .navbar-main .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover,
+  .navbar-main .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:focus {
+    color: #e7ab3c;
+  }
+  
+  .navbar-main .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Product card styles */
+.card-product {
+box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+margin-bottom: 30px;
+}
+
+.card-product .img-wrap {
+position: relative;
+overflow: hidden;
+height: 200px;
+text-align: center;
+}
+
+.card-product .img-wrap img {
+max-width: 100%;
+max-height: 100%;
+}
+
+.card-product .img-wrap .badge {
+position: absolute;
+top: 15px;
+right: 15px;
+background-color: #e7ab3c;
+color: #fff;
+padding: 5px 10px;
+font-size: 14px;
+font-weight: 500;
+text-transform: uppercase;
+}
+
+.card-product .info-wrap {
+padding: 20px;
+}
+
+.card-product .title {
+font-size: 18px;
+font-weight: 500;
+margin-bottom: 10px;
+}
+
+.card-product .price-wrap {
+margin-top: 20px;
+}
+
+.card-product .price-wrap .price {
+font-size: 24px;
+font-weight: 500;
+color: #e7ab3c;
+margin-right: 10px;
+}
+
+.card-product .price-wrap .rating {
+font-size: 14px;
+color: #777;
+}
+
+.card-product .price-wrap .price-old {
+font-size: 14px;
+color: #999;
+text-decoration: line-through;
+margin-right: 10px;
+}
+
+.card-product .btn {
+background-color: #e7ab3c;
+border-color: #e7ab3c;
+color: #fff;
+font-size: 16px;
+font-weight: 500;
+padding: 10px 20px;
+margin-top: 20px;
+}
+
+.card-product .btn:hover {
+background-color: #ffcf77;
+border-color: #ffcf77;
+color: #fff;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+      <style>
+         input {
+           padding: 10px;
+           margin-bottom: 10px;
+           border: solid #ccc;
+           border-radius: 5px;
+           box-sizing: border-box;
+           font-size: 16px;
+         }
+         input[type="submit"] {
+           background-color: #4CAF50;
+           color: white;
+           cursor: pointer;
+           padding:10px;
+         }
+         form {
+           max-width: 250px;
+           margin: auto;
+           padding: 20px;
+           background-color: #f2f2f2;
+           border-radius: 5px;
+           font-size: 18px;
+           line-height: 1.6;
+         }
+         </style>
+    </head>
+<body>
+<center><h2>Validation of a form</h2></center>
+<form id="form" method="post" action="">
+First name:<br>
+<input type="text" name="firstname" value="kavita">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="kumari">
+<br>
+Email:<br>
+<input type="email" name="u_email" value="kavi@gmail.com">
+<br>
+<br><br>
+<center><input type="submit" value="Submit"></center>
+</form>
+<script>
+$(document).ready(function() {
+   $("#form").validate({
+      rules: {
+         firstname: 'required',
+         lastname: 'required',
+         u_email: {
+            required: true,
+            email: true,
+            maxlength: 255,
+         }
+      },
+      messages: {
+         firstname: 'This field is required',
+         lastname: 'This field is required',
+         u_email: 'Enter a valid email'
+      },
+      submitHandler: function(form) {
+         alert("Login Sucessfull!!");         
+      }
+   });
+});
+</script>
+</body>
+</html>
