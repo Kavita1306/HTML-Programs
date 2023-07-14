@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 40%;
+  height: 600px;
+  padding :5px;
+   /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+</style>
+</head>
+<body>
+
+<h2 style="color:brown">News Portal</h2>
+
+<div class="row">
+  <div class="column" style="background-color:rgb(29, 138, 37);">
+<img src="C:\Users\ACER\Downloads\img1.jpg">
+    <h2>India among countries with most Android malware, ‘GB WhatsApp’ among responsible apps: ESET report</h2>
+    <p>As cybersecurity threats around the world decrease post COVID, a new ESET report suggests the situation is still not very good in India, which happens to be one of the largest playgrounds for Android malware. </p>
+  </div>
+  <div class="column" style="background-color:rgb(172, 112, 161);">
+    <img src="C:\Users\ACER\Downloads\img2.jpg"width="100%">
+    <h2>Apple’s record Euro 1.1 billion French antitrust fine slashed by 66 per cent</h2>
+    <p>Apple won a €728 million-euro ($715 million) reduction to the record €1.1 billion penalty it was hit with in 2020 for anti-competitive agreements with two favored distributors.<br>The Paris court of appeals reduced Apple’s total fine on Thursday to about €371.6 million after judges decided to trim the duration of one of the infringements and lower the increases applied to the penalty that took into account the firm’s economic power.</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage creation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("par-1").click(function(){
+    $("par-1").css("background-color","red")
+    $("par-2").css("background-color","red")
+});
+});
+$(document).ready(function(){
+$("button").click(function(){
+$("img").attr("width",50);
+$("img").attr("height",50);
+$(this).hide();
+});
+});
+$(document).ready(function(){
+    $("button").click(function(){
+      $(this).hide();
+});
+});
+    </script>
+  </head>
+</head>
+<body>
+    <p1 class="par-1" >This is paragraph 1</p1><br>
+    <p2 class="par-2">This is paragraph 2</p2><br>
+    <img src="C:\Users\ACER\Pictures\Camera Roll\png\AWARDS 12.png"></img><br>
+    <button class="button">Submit</button>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON functions</title>
+</head>
+<body>
+<h1>Object creation</h1>
+<p id="demo"></p>
+<script>
+const student={
+                    "name":"Kavita",
+                    "course":"MCA",
+                    "branch":"UIC"
+}
+const obj=JSON.parse(student);
+document.getElementById("demo").innerHTML=student.name+"  "+student.course;
+document.getElementById("demo").innerHTML=obj.name+"  "+obj.course;
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Element Deletion From array using JSON</title>
+</head>
+    <script>
+    var students = [
+    {
+         "student": "Khushboo",
+         "address": "Pathankot",
+         "course": "MCA"
+      },
+    {
+         "student": "Kavita",
+         "address": "Uttrakhand",
+         "course": "MCA"
+      },
+      {
+         "student": "Sara",
+         "address": "Delhi",
+         
+         "course": "MCA"
+        },
+      {
+         "student": "Sarthak Bhatt",
+         "address": "Panchkula",
+         "course": "MCA"
+       },
+       {
+         "student": "Shubham",
+         "address": "Himachal Pradesh",
+         "course": "MCA"
+        }
+        ]
+
+console.log("Using Delete Keyword for "+ "Deleting object property at index 1");
+delete students[1].course;
+console.log("Object Post  Deleting : ");
+console.log(students);
+</script>
+</html>

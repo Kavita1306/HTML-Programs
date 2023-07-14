@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Program</title>
+<style>
+    .container{
+        padding: 20px;
+        background: #f2f2f2;
+        border: 5px solid #aaa;
+    }
+    .content{
+        padding: 10px;
+        border: 3px solid orange;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".container").append('<div class="content">Add Div after the content</div>');   
+        $(".container").prepend('<div class="content">Add Div before the content</div>'); 
+    });    
+});
+</script>
+</head>
+<body>
+    <div class="container">
+        <h1>jQuery Program Demonstration</h1>
+        <p>Creating Div using style tag in jQuery!!</p>
+        <p><button type="button">Insert DIV</button></p>
+    </div>
+</body>
+</html>

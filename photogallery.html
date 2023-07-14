@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image gallery</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            margin:0;
+            background: gray;
+        }
+        nav{
+            background: #594848;
+            width:100%;
+            overflow:auto;
+        }
+        ul{
+            margin: 0;
+            padding:0;
+            list-style: none;
+        }
+        li{
+            float:left;
+        }
+        nav a{
+            width:120px;
+            display:block;
+            text-decoration: none;
+            text-align: center;
+            background:#594848;
+            font-size: 17px;
+            color: white;
+            padding: 20px 10px;
+            font-family: Arial;
+        }
+        nav a:hover{
+            background: Skyblue;
+            color: black;
+        }
+        .container{
+            max-width: 1200px;
+            margin: auto;
+            background: #70718d;
+            overflow:auto;
+        }
+        .gallery{
+            margin:5px;
+            border: 1px solid #ccc;
+            float: left;
+            width:390px;
+        }
+        .gallery img{
+            width:100%;
+            height: auto;
+        }
+        .desc{
+            padding:15px;
+            text-align: center;
+        }
+        footer{
+            padding: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center;
+            background: #594848;
+            color:white;
+            font-family: Arial;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Download</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>    
+    </ul>
+  </nav>  
+  <div class="container">
+    <div class="gallery">
+        <img src="C:\Users\ACER\Pictures\4.jpg">
+        <div class="desc">Artificial Intelligence</div>
+    </div>
+    <div class="gallery">
+        <img src="C:\Users\ACER\Pictures\1.jpg">
+        <div class="desc">Bitcoin</div>
+    </div>
+    <div class="gallery">
+        <img src="C:\Users\ACER\Pictures\2.jpg">
+        <div class="desc">Cyber Security</div>
+    </div>
+    <div class="gallery">
+        <img src="C:\Users\ACER\Pictures\5.jpg">
+        <div class="desc">Add a description of the image here</div>
+    </div>
+    <div class="gallery">
+        <img src="C:\Users\ACER\Pictures\6.jpg">
+        <div class="desc">Add a description of the image here</div>
+    </div>
+    <div class="gallery">
+        <img src="C:\Users\ACER\Pictures\3.jpg">
+        <div class="desc">Add a description of the image here</div>
+    </div>
+  </div>
+  <footer>
+    All  rights reserved web page
+  </footer>
+</body>
+</html>

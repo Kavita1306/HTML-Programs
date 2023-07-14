@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").css("background-color","yellow")
+  $("p").click(function(){
+    $(this).hide();
+  });
+  $("p").mouseover(function(){
+    $("p").css("background-color","lightgreen")
+  });
+  $("p").mouseout(function(){
+    $("p").css("background-color","lightblue")
+  });
+});
+</script>
+</head>
+<body>
+
+<p>jQuery events</p>
+<p>Demonstration</p>
+<p>Click me !</p>
+
+</body>
+</html>
